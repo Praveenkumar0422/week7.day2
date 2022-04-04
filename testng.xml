@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes"  name="Suite">
+  <test thread-count="5" parallel="classes"  name="Test">
+    <parameter name="browser" value="chrome"></parameter>
+   <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+    <classes>
+    
+   <class name="com.laeftaps.ui.test.CreateLeat_TC001"/>    
+     <class name="com.laeftaps.ui.test.MergeLead_TC002"/>
+     <class name="com.laeftaps.ui.test.DeleteLead_TC003"/>
+      <class name="com.laeftaps.ui.test.EditLead_TC004"/>
+       <class name="com.laeftaps.ui.test.DuplicateLead_Tc005"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" parallel="classes"  name="Test2">
+    <parameter name="browser" value="edge"></parameter>
+   <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+    <classes>
+    
+   <class name="com.laeftaps.ui.test.CreateLeat_TC001"/>    
+     <class name="com.laeftaps.ui.test.MergeLead_TC002"/>
+     <class name="com.laeftaps.ui.test.DeleteLead_TC003"/>
+      <class name="com.laeftaps.ui.test.EditLead_TC004"/>
+       <class name="com.laeftaps.ui.test.DuplicateLead_Tc005"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+</suite> <!-- Suite -->
